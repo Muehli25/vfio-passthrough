@@ -1,0 +1,1 @@
+gnome-randr.py --output DP-1 --off --output HDMI-1 --off

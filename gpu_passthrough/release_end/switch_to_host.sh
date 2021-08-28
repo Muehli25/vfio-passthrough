@@ -1,0 +1,18 @@
+#!/bin/bash
+
+ACER27="3"
+ACER24="2"
+LG24="1"
+
+ACER27_GUEST_INPUT="0F"
+ACER27_HOST_INPUT="11"
+
+ACER24_GUEST_INPUT="0F"
+ACER24_HOST_INPUT="03"
+
+LG24_GUEST_INPUT="04"
+LG24_HOST_INPUT="03"
+
+ddcutil -v -d "$ACER27" setvcp 60 "0x$ACER27_HOST_INPUT" &&
+ddcutil -v -d "$ACER24" setvcp 60 "0x$ACER24_HOST_INPUT" &&
+ddcutil -v -d "$LG24" setvcp 60 "0x$LG24_HOST_INPUT"
