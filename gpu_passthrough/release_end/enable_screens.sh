@@ -1,1 +1,1 @@
-gnome-randr.py --output DP-1 --auto --primary --output DP-2 --left-of DP-1 --auto --output HDMI-1 --right-of DP-1 --auto
+gnome-randr.py --output DisplayPort-0 --auto --primary --output DisplayPort-1 --left-of DisplayPort-0 --auto --output HDMI-A-0 --right-of DisplayPort-0 --auto
